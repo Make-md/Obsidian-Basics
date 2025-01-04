@@ -1,4 +1,4 @@
-# Basics
+# Basics for Obsidian
 Basics transforms your editor experience to enhance your note-taking by streamlining the process of viewing, editing, and styling your notes. Basics offers a range of powerful features, including:
 
 ## Inline Styler
