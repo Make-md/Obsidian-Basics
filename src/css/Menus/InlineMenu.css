@@ -1,0 +1,110 @@
+body:not(.is-mobile) .mk-style-menu {
+  margin-left: -80px;
+}
+
+.mk-style-menu .mk-divider {
+  border-left: thin solid var(--mk-ui-divider);
+  width: 1px;
+  height: 24px;
+}
+
+.mk-style-menu {
+  display: flex;
+  padding: 4px;
+  margin-top: -50px;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--background-modifier-border-hover);
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-s);
+    z-index: var(--layer-menu);
+}
+
+.mk-style-toolbar svg, .mk-style-menu svg {
+  width: 16px;
+  height: 16px;
+}
+
+.mk-style-toolbar .mk-mark, .mk-style-menu .mk-mark {
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+}
+
+.mk-style-toolbar {
+  --mobile-toolbar-height: 48px;
+  border-radius: 0;
+  width: 100%;
+  margin-top: 0;
+  overflow-x: auto;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.mk-style-menu .mk-mark {
+  margin: 4px;
+  border-radius: 4px;
+  display: flex;
+}
+
+
+.mk-mobile-styler .mobile-toolbar-options-list {
+  display: none;
+}
+.mk-mobile-styler .mobile-toolbar-floating-options {
+  display: none;
+}
+
+.mk-mark div {
+  display: flex;
+}
+.mk-mark-group {
+  display: flex;
+}
+.mk-mark-dropdown {
+  padding: 2px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.mk-mark-dropdown svg {
+  width: 12px;
+  height: 12px;
+  transform: rotate(90deg)
+}
+
+.mk-style-menu .mk-mark:hover, .mk-style-menu .mk-mark-dropdown:hover {
+  background: var(--mk-ui-background-hover);
+}
+
+.mk-style-menu .mk-mark-active {
+  background: var(--mk-ui-background-hover);
+}
+
+.mk-style-menu svg {
+  color: var(--mk-ui-text-secondary);
+}
+
+
+.mk-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin: 8px;
+  border: thin solid var(--mk-ui-border);
+}
+.mk-color:hover {
+  opacity: 0.8;
+}
+
+mark {
+  color: unset;
+  border-radius: 2px;
+  margin: 0px 2px;
+  padding: 0px 2px;
+}
