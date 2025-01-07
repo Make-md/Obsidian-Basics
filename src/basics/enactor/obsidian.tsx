@@ -367,6 +367,12 @@ export class ObsidianEnactor implements Enactor {
     new Notice(message);
   }
   uriByString(uri: string, source?: string) {
+    if (!uri) return null;
+
+    if (source) {
+      uri = this.resolvePath(uri, source);
+      if (!uri) return null;
+    }
     return parseURI(uri);
   }
   spaceFragmentSchema(uri: string) {
@@ -377,6 +383,9 @@ export class ObsidianEnactor implements Enactor {
     this.plugin.saveData(this.plugin.settings);
   }
   resolvePath(path: string, source?: string) {
+    if (!path || !source) {
+      return null;
+    }
     return this.plugin.app.metadataCache.getFirstLinkpathDest(path, source)
       ?.path;
   }

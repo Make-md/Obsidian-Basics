@@ -1,7 +1,7 @@
 {
   "id": "make-basics",
   "name": "Basics",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minAppVersion": "0.16.0",
   "description": "Editable embeds and inline styling and other basic improvements to the markdown editor to your workflow.",
   "author": "MAKE.md",
